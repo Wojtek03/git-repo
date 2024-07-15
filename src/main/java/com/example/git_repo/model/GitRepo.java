@@ -1,14 +1,16 @@
 package com.example.git_repo.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class GitRepo {
-
-    private String fullName;
+    private String full_name;
     private String description;
-    private String cloneUrl;
-    private int stars;
-    private String createdAt;
+    private String clone_url;
+    private int stargazers_count;
+    private String created_at;
 }
