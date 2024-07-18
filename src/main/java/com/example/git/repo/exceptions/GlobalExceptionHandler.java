@@ -1,4 +1,4 @@
-package com.example.git_repo.exceptions;
+package com.example.git.repo.exceptions;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -12,4 +12,3 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String>  handleResponseStatusException(ResponseStatusException e){
         return ResponseEntity.status(e.getStatusCode()).body(e.getReason());}
 }
-

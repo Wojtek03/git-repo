@@ -1,7 +1,7 @@
-package com.example.git_repo.fallback;
+package com.example.git.repo.fallback;
 
-import com.example.git_repo.client.GitClient;
-import com.example.git_repo.model.GitRepo;
+import com.example.git.repo.client.GitClient;
+import com.example.git.repo.model.GitRepo;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -15,4 +15,3 @@ public class GitClientFallback implements GitClient {
         return fallbackRepo;
     }
 }
-

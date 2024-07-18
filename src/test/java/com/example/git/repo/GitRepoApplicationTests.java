@@ -1,4 +1,4 @@
-package com.example.git_repo;
+package com.example.git.repo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

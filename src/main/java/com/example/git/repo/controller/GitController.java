@@ -1,7 +1,7 @@
-package com.example.git_repo.controller;
+package com.example.git.repo.controller;
 
-import com.example.git_repo.client.GitClient;
-import com.example.git_repo.model.GitRepo;
+import com.example.git.repo.client.GitClient;
+import com.example.git.repo.model.GitRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,4 +18,3 @@ public class GitController {
         return gitClient.getRepoDetails(owner, repo);
     }
 }
-

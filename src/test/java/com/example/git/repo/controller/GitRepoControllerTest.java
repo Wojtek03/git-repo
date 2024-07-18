@@ -1,11 +1,11 @@
-package com.example.git_repo.controller;
+package com.example.git.repo.controller;
 
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.example.git_repo.client.GitClient;
-import com.example.git_repo.model.GitRepo;
+import com.example.git.repo.client.GitClient;
+import com.example.git.repo.model.GitRepo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class GitControllerTest {
+public class GitRepoControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -49,9 +49,10 @@ public class GitControllerTest {
                 .andExpect(jsonPath("$.full_name").value("example/repo"))
                 .andExpect(jsonPath("$.description").value("This is a description."))
                 .andExpect(jsonPath("$.clone_url").value("https://github.com/Wojtek03/git-repo"))
-                .andExpect(jsonPath("$.stargazers").value(100))
+                .andExpect(jsonPath("$.stargazers_count").value(100))
                 .andExpect(jsonPath("$.created_at").value("2024-01-01T00:00:00Z"));
     }
+
 
     @Test
     public void GetRepoDetails_RepoDoesNotExist_ReturnsException() throws Exception {

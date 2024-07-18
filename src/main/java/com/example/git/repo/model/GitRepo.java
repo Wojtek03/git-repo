@@ -1,4 +1,4 @@
-package com.example.git_repo.model;
+package com.example.git.repo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

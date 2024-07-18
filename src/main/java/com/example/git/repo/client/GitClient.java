@@ -1,8 +1,8 @@
-package com.example.git_repo.client;
+package com.example.git.repo.client;
 
-import com.example.git_repo.configuration.GitClientConfiguration;
-import com.example.git_repo.fallback.GitClientFallback;
-import com.example.git_repo.model.GitRepo;
+import com.example.git.repo.configuration.GitClientConfiguration;
+import com.example.git.repo.fallback.GitClientFallback;
+import com.example.git.repo.model.GitRepo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
